@@ -50,6 +50,16 @@
 		"DEPT_NO" : 30
 	},
 	{
+		"EMP_NO" : 7739,
+		"APELLIDO" : "FILEMON",
+		"OFICIO" : "VENDEDOR",
+		"DIR" : 7698,
+		"FECHA_ALT" : "1994-07-26",
+		"SALARIO" : 1553.00,
+		"COMISION" : 300.00,
+		"DEPT_NO" : 60
+	},
+	{
 		"EMP_NO" : 7698,
 		"APELLIDO" : "NEGRO",
 		"OFICIO" : "DIRECTOR",
