@@ -1,0 +1,27 @@
+[
+	{
+		"DEPT_NO" : 10,
+		"DNOMBRE" : "CONTABILIDAD",
+		"LOC" : "SEVILLA"
+	},
+	{
+		"DEPT_NO" : 20,
+		"DNOMBRE" : "INVESTIGACIÓN",
+		"LOC" : "MADRID"
+	},
+	{
+		"DEPT_NO" : 30,
+		"DNOMBRE" : "VENTAS",
+		"LOC" : "BARCELONA"
+	},
+	{
+		"DEPT_NO" : 40,
+		"DNOMBRE" : "PRODUCCIÓN",
+		"LOC" : "BILBAO"
+	},
+	{
+		"DEPT_NO" : 50,
+		"DNOMBRE" : "INFORMATICA",
+		"LOC" : "BARCELONA"
+	}
+]

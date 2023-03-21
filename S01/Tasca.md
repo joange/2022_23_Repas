@@ -18,54 +18,23 @@ Create a Java program with Model classes `Departamento` and `Empleado`:
 
 > Departamento=DEPT_NO +DNOMBRE +LOC
 
+## 2.3. Loading data from Departamentos
 
-## 2.3. Loading data
+Create a Java program who Starting with file name and previous classes, load data from ___Departamentos.csv___  into a List of Departamentos.
 
-Create a Java program who:
+##  2.4. Loading data from Empleados 
 
-- Starting with file name and previous classes, load data from ___Departamentos.csv___  into a List of Departamentos.
-- Starting with file name and previous classes, load data from Empleados.json  into a Set of Empleados.
+Do last exercise, but loading data from ___Empleados.csv___. Remember that first line is header information.
 
-## 2.4. Processing data
+> Check and deal that some field have `NULL` value (as String)
 
-Once we have loaded data, create a program who find or check this information:
+## 2.5. Exporting data
 
-- Empleados who has a wrong Departamento
-- For each Empleado check how many other empleados has at his orders. Think that DIR field is DIRECTOR
+Store into a new file, called ___Empleados.dat___ information about Empleados in binary format. You need to make portable information.
 
-## 2.5. Creating new data
+> Remember that you need to define `SereialVersionUID`. Check with your mates.
 
-- Store into a new file, called ___Empleados.dat___ information about Empleados in binary format. You need to make partable information.
-- Create file ___newEmpleados.xml___ changing the structure:
 
-Orignial
-
-```xml
-<Empleado>
-  <EMP_NO>7369</EMP_NO>
-  <APELLIDO>SÁNCHEZ</APELLIDO>
-  <OFICIO>EMPLEADO</OFICIO>
-  <DIR>7902</DIR>
-  <FECHA_ALT>1990-12-17</FECHA_ALT>
-  <SALARIO>1040.00</SALARIO>
-  <COMISION>NULL</COMISION>
-  <DEPT_NO>20</DEPT_NO>
-</ROW>
-```
-
-New Structure:
-
-```xml
-<Empleado number=7369 dir=7902 dept=20> 
-  <Apellido>SÁNCHEZ</Apellido>
-  <Oficio>EMPLEADO</Oficio>
-  <Administrativos>
-    <Fecha_Alta>1990-12-17</Fecha_Alta>
-    <Salario>1040.00</Salario>
-    <Comision>Null</Comision>
-  </Administrativos>
-</Empleado>
-```
 
 ## 2.6. Extra
 
