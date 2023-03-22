@@ -1,6 +1,6 @@
-# Importing and Exporting data
+# 1. Importing and Exporting data
 
-## Loading data
+## 1.1. Loading data
 
 Starting with file name and previous classes, load data from ***Empleados.json*** into a `Set` of Empleados.
 
@@ -9,7 +9,7 @@ Once we have loaded data, create a program who find or check this information:
 - Empleados who has a wrong Departamento
 - For each Empleado check how many other empleados has at his orders. Think that DIR field is DIRECTOR
 
-## Creating new data
+## 1.2. Creating new data
 
 - Create file ___newEmpleados.xml___ changing the structure:
 
@@ -43,6 +43,6 @@ New Structure:
 ```
 
 
-## Generating data
+## 1.3. Generating data
 
-Starting with data from Empleados,
+Starting with data from Empleados and Departamentos...

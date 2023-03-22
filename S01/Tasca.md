@@ -32,7 +32,7 @@ Do last exercise, but loading data from ___Empleados.csv___. Remember that first
 
 Store into a new file, called ___Empleados.dat___ information about Empleados in binary format. You need to make portable information.
 
-> Remember that you need to define `SereialVersionUID`. Check with your mates.
+> Remember that you need to define `SerialVersionUID`. Check with your mates.
 
 
 

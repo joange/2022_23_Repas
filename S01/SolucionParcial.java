@@ -133,6 +133,35 @@ public static String ruta = "/Users/joange/Documents/2022_23_Repas/S01";
         }
         return losEmpleados;
     }
+
+    public void exportEmpleados (ArrayList<Empleado> losEmpleados,String fileName){
+        
+        FileOutputStream fos= null;
+        
+        try {
+            File f= new File(fileName);
+            fos = new FileOutputStream(f);
+            ObjectOutputStream OOS = new ObjectOutputStream(fos);
+            
+            for (Empleado e : losEmpleados) {
+                OOS.writeObject(e);
+            }
+            
+            OOS.close();
+            fos.close();
+            
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            try {
+                fos.close();
+            } catch (IOException ex) {
+                Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }
     
     public Date dateFromString(String date) {
       Date convertedDate = null;
