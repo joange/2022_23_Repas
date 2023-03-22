@@ -1,4 +1,5 @@
-[
+{
+	"Departamentos":[
 	{
 		"DEPT_NO" : 10,
 		"DNOMBRE" : "CONTABILIDAD",
@@ -25,3 +26,4 @@
 		"LOC" : "BARCELONA"
 	}
 ]
+}
