@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Empleados>
+  <Empleado dept="30" dir="7698" number="7844">
+    <Apellido>TOVAR</Apellido>
+    <Oficio>VENDEDOR</Oficio>
+    <Administrativos>
+      <Fecha_Alta>Sun Sep 08 00:00:00 CEST 1991</Fecha_Alta>
+      <Salario>1350.0</Salario>
+      <Comision>0.0</Comision>
+    </Administrativos>
+  </Empleado>
+  <Empleado dept="30" dir="7698" number="7521">
+    <Apellido>SALA</Apellido>
+    <Oficio>VENDEDOR</Oficio>
+    <Administrativos>
+      <Fecha_Alta>Fri Feb 22 00:00:00 CET 1991</Fecha_Alta>
+      <Salario>1625.0</Salario>
+      <Comision>650.0</Comision>
+    </Administrativos>
+  </Empleado>
+  <Empleado dept="50" dir="7782" number="7935">
+    <Apellido>GATES</Apellido>
+    <Oficio>EMPLEADO</Oficio>
+    <Administrativos>
+      <Fecha_Alta>Thu Jan 23 00:00:00 CET 1992</Fecha_Alta>
+      <Salario>1690.0</Salario>
+      <Comision>0.0</Comision>
+    </Administrativos>
+  </Empleado>
+  <Empleado dept="20" dir="7839" number="7566">
+    <Apellido>JIMÉNEZ</Apellido>
+    <Oficio>DIRECTOR</Oficio>
+    <Administrativos>
+      <Fecha_Alta>Tue Apr 02 00:00:00 CEST 1991</Fecha_Alta>
+      <Salario>2900.0</Salario>
+      <Comision>0.0</Comision>
+    </Administrativos>
+  </Empleado>
+  <Empleado dept="20" dir="7566" number="7788">
+    <Apellido>GIL</Apellido>
+    <Oficio>ANALISTA</Oficio>
+    <Administrativos>
+      <Fecha_Alta>Sat Nov 09 00:00:00 CET 1991</Fecha_Alta>
+      <Salario>3000.0</Salario>
+      <Comision>0.0</Comision>
+    </Administrativos>
+  </Empleado>
+  <Empleado dept="60" dir="7698" number="7739">
+    <Apellido>FILEMON</Apellido>
+    <Oficio>VENDEDOR</Oficio>
+    <Administrativos>
+      <Fecha_Alta>Tue Jul 26 00:00:00 CEST 1994</Fecha_Alta>
+      <Salario>1553.0</Salario>
+      <Comision>300.0</Comision>
+    </Administrativos>
+  </Empleado>
+  <Empleado dept="20" dir="7902" number="7369">
+    <Apellido>SÁNCHEZ</Apellido>
+    <Oficio>EMPLEADO</Oficio>
+    <Administrativos>
+      <Fecha_Alta>Mon Dec 17 00:00:00 CET 1990</Fecha_Alta>
+      <Salario>1040.0</Salario>
+      <Comision>0.0</Comision>
+    </Administrativos>
+  </Empleado>
+  <Empleado dept="30" dir="7839" number="7698">
+    <Apellido>NEGRO</Apellido>
+    <Oficio>DIRECTOR</Oficio>
+    <Administrativos>
+      <Fecha_Alta>Wed May 01 00:00:00 CEST 1991</Fecha_Alta>
+      <Salario>3005.0</Salario>
+      <Comision>0.0</Comision>
+    </Administrativos>
+  </Empleado>
+  <Empleado dept="10" dir="-1" number="7839">
+    <Apellido>REY</Apellido>
+    <Oficio>PRESIDENTE</Oficio>
+    <Administrativos>
+      <Fecha_Alta>Sun Nov 17 00:00:00 CET 1991</Fecha_Alta>
+      <Salario>4100.0</Salario>
+      <Comision>0.0</Comision>
+    </Administrativos>
+  </Empleado>
+  <Empleado dept="20" dir="7788" number="7876">
+    <Apellido>ALONSO</Apellido>
+    <Oficio>EMPLEADO</Oficio>
+    <Administrativos>
+      <Fecha_Alta>Mon Sep 23 00:00:00 CEST 1991</Fecha_Alta>
+      <Salario>1430.0</Salario>
+      <Comision>0.0</Comision>
+    </Administrativos>
+  </Empleado>
+  <Empleado dept="20" dir="7566" number="7902">
+    <Apellido>FERNÁNDEZ</Apellido>
+    <Oficio>ANALISTA</Oficio>
+    <Administrativos>
+      <Fecha_Alta>Tue Dec 03 00:00:00 CET 1991</Fecha_Alta>
+      <Salario>3000.0</Salario>
+      <Comision>0.0</Comision>
+    </Administrativos>
+  </Empleado>
+  <Empleado dept="30" dir="7698" number="7654">
+    <Apellido>MARTÍN</Apellido>
+    <Oficio>VENDEDOR</Oficio>
+    <Administrativos>
+      <Fecha_Alta>Sun Sep 29 00:00:00 CEST 1991</Fecha_Alta>
+      <Salario>1600.0</Salario>
+      <Comision>1020.0</Comision>
+    </Administrativos>
+  </Empleado>
+  <Empleado dept="30" dir="7698" number="7499">
+    <Apellido>ARROYO</Apellido>
+    <Oficio>VENDEDOR</Oficio>
+    <Administrativos>
+      <Fecha_Alta>Tue Feb 20 00:00:00 CET 1990</Fecha_Alta>
+      <Salario>1500.0</Salario>
+      <Comision>390.0</Comision>
+    </Administrativos>
+  </Empleado>
+  <Empleado dept="10" dir="7839" number="7782">
+    <Apellido>CEREZO</Apellido>
+    <Oficio>DIRECTOR</Oficio>
+    <Administrativos>
+      <Fecha_Alta>Sun Jun 09 00:00:00 CEST 1991</Fecha_Alta>
+      <Salario>2885.0</Salario>
+      <Comision>0.0</Comision>
+    </Administrativos>
+  </Empleado>
+  <Empleado dept="30" dir="7698" number="7900">
+    <Apellido>JIMENO</Apellido>
+    <Oficio>EMPLEADO</Oficio>
+    <Administrativos>
+      <Fecha_Alta>Tue Dec 03 00:00:00 CET 1991</Fecha_Alta>
+      <Salario>1335.0</Salario>
+      <Comision>0.0</Comision>
+    </Administrativos>
+  </Empleado>
+  <Empleado dept="10" dir="7782" number="7934">
+    <Apellido>MUÑOZ</Apellido>
+    <Oficio>EMPLEADO</Oficio>
+    <Administrativos>
+      <Fecha_Alta>Thu Jan 23 00:00:00 CET 1992</Fecha_Alta>
+      <Salario>1690.0</Salario>
+      <Comision>0.0</Comision>
+    </Administrativos>
+  </Empleado>
+</Empleados>

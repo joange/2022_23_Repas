@@ -1,0 +1,174 @@
+{"Empresa": [
+    {
+        "TOTAL": 8675,
+        "LOC": "SEVILLA",
+        "DNOMBRE": "CONTABILIDAD",
+        "EMPLEADOS": [
+            {
+                "APELLIDO": "REY",
+                "FECHA_ALT": "Sun Nov 17 00:00:00 CET 1991",
+                "COMISION": 0,
+                "SALARIO": 4100,
+                "EMP_NO": 7839,
+                "OFICIO": "PRESIDENTE",
+                "DEPT_NO": 10
+            },
+            {
+                "APELLIDO": "CEREZO",
+                "FECHA_ALT": "Sun Jun 09 00:00:00 CEST 1991",
+                "COMISION": 0,
+                "SALARIO": 2885,
+                "EMP_NO": 7782,
+                "OFICIO": "DIRECTOR",
+                "DEPT_NO": 10
+            },
+            {
+                "APELLIDO": "MUÑOZ",
+                "FECHA_ALT": "Thu Jan 23 00:00:00 CET 1992",
+                "COMISION": 0,
+                "SALARIO": 1690,
+                "EMP_NO": 7934,
+                "OFICIO": "EMPLEADO",
+                "DEPT_NO": 10
+            }
+        ],
+        "DEPT_NO": 10
+    },
+    {
+        "TOTAL": 11370,
+        "LOC": "MADRID",
+        "DNOMBRE": "INVESTIGACIÓN",
+        "EMPLEADOS": [
+            {
+                "APELLIDO": "JIMÉNEZ",
+                "FECHA_ALT": "Tue Apr 02 00:00:00 CEST 1991",
+                "COMISION": 0,
+                "SALARIO": 2900,
+                "EMP_NO": 7566,
+                "OFICIO": "DIRECTOR",
+                "DEPT_NO": 20
+            },
+            {
+                "APELLIDO": "GIL",
+                "FECHA_ALT": "Sat Nov 09 00:00:00 CET 1991",
+                "COMISION": 0,
+                "SALARIO": 3000,
+                "EMP_NO": 7788,
+                "OFICIO": "ANALISTA",
+                "DEPT_NO": 20
+            },
+            {
+                "APELLIDO": "SÁNCHEZ",
+                "FECHA_ALT": "Mon Dec 17 00:00:00 CET 1990",
+                "COMISION": 0,
+                "SALARIO": 1040,
+                "EMP_NO": 7369,
+                "OFICIO": "EMPLEADO",
+                "DEPT_NO": 20
+            },
+            {
+                "APELLIDO": "ALONSO",
+                "FECHA_ALT": "Mon Sep 23 00:00:00 CEST 1991",
+                "COMISION": 0,
+                "SALARIO": 1430,
+                "EMP_NO": 7876,
+                "OFICIO": "EMPLEADO",
+                "DEPT_NO": 20
+            },
+            {
+                "APELLIDO": "FERNÁNDEZ",
+                "FECHA_ALT": "Tue Dec 03 00:00:00 CET 1991",
+                "COMISION": 0,
+                "SALARIO": 3000,
+                "EMP_NO": 7902,
+                "OFICIO": "ANALISTA",
+                "DEPT_NO": 20
+            }
+        ],
+        "DEPT_NO": 20
+    },
+    {
+        "TOTAL": 10415,
+        "LOC": "BARCELONA",
+        "DNOMBRE": "VENTAS",
+        "EMPLEADOS": [
+            {
+                "APELLIDO": "TOVAR",
+                "FECHA_ALT": "Sun Sep 08 00:00:00 CEST 1991",
+                "COMISION": 0,
+                "SALARIO": 1350,
+                "EMP_NO": 7844,
+                "OFICIO": "VENDEDOR",
+                "DEPT_NO": 30
+            },
+            {
+                "APELLIDO": "SALA",
+                "FECHA_ALT": "Fri Feb 22 00:00:00 CET 1991",
+                "COMISION": 650,
+                "SALARIO": 1625,
+                "EMP_NO": 7521,
+                "OFICIO": "VENDEDOR",
+                "DEPT_NO": 30
+            },
+            {
+                "APELLIDO": "NEGRO",
+                "FECHA_ALT": "Wed May 01 00:00:00 CEST 1991",
+                "COMISION": 0,
+                "SALARIO": 3005,
+                "EMP_NO": 7698,
+                "OFICIO": "DIRECTOR",
+                "DEPT_NO": 30
+            },
+            {
+                "APELLIDO": "MARTÍN",
+                "FECHA_ALT": "Sun Sep 29 00:00:00 CEST 1991",
+                "COMISION": 1020,
+                "SALARIO": 1600,
+                "EMP_NO": 7654,
+                "OFICIO": "VENDEDOR",
+                "DEPT_NO": 30
+            },
+            {
+                "APELLIDO": "ARROYO",
+                "FECHA_ALT": "Tue Feb 20 00:00:00 CET 1990",
+                "COMISION": 390,
+                "SALARIO": 1500,
+                "EMP_NO": 7499,
+                "OFICIO": "VENDEDOR",
+                "DEPT_NO": 30
+            },
+            {
+                "APELLIDO": "JIMENO",
+                "FECHA_ALT": "Tue Dec 03 00:00:00 CET 1991",
+                "COMISION": 0,
+                "SALARIO": 1335,
+                "EMP_NO": 7900,
+                "OFICIO": "EMPLEADO",
+                "DEPT_NO": 30
+            }
+        ],
+        "DEPT_NO": 30
+    },
+    {
+        "TOTAL": 0,
+        "LOC": "BILBAO",
+        "DNOMBRE": "PRODUCCIÓN",
+        "EMPLEADOS": [],
+        "DEPT_NO": 40
+    },
+    {
+        "TOTAL": 1690,
+        "LOC": "BARCELONA",
+        "DNOMBRE": "INFORMATICA",
+        "EMPLEADOS": [{
+            "APELLIDO": "GATES",
+            "FECHA_ALT": "Thu Jan 23 00:00:00 CET 1992",
+            "COMISION": 0,
+            "SALARIO": 1690,
+            "EMP_NO": 7935,
+            "OFICIO": "EMPLEADO",
+            "DEPT_NO": 50
+        }],
+        "DEPT_NO": 50
+    }
+]}
