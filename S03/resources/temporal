@@ -1,0 +1,160 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package Utils;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Properties;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+/**
+ *
+ * @author joange
+ */
+public class ConnexioDBMySQL {
+
+    private Connection laConnexio = null;
+
+    private String dbName;
+    private String host;
+    private String port;
+    private String user;
+    private String pass;
+
+    public ConnexioDBMySQL() {
+        this.dbName = "BDJuegos";
+        this.host = "localhost";
+        this.port = "3308";
+        this.user = "root";
+        this.pass = "root";
+    }
+
+    public ConnexioDBMySQL(String filename) {
+        try {
+            Properties config = new Properties();
+            config.load(new FileInputStream(filename));
+
+            this.port = config.getProperty("port");
+            this.host = config.getProperty("server");
+            this.dbName = config.getProperty("dbName");
+            this.pass = config.getProperty("password");
+            this.user = config.getProperty("user");
+
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(ConnexioDBMySQL.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(ConnexioDBMySQL.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    private void obrirConnexio() {
+        try {
+            String connectionUrl = "jdbc:mysql://" + this.host + ":" + port + "/" + dbName+"?allowMultiQueries=true";
+
+            Properties p = new Properties();
+
+            p.put("user", this.user);
+            p.put("password", this.pass);
+//            p.put("allowMultiQueries", this.allowMultiple);
+            laConnexio = DriverManager.getConnection(connectionUrl, p);
+            
+
+
+            System.out.println(ConsoleColors.GREEN + "Connection to MySQL has been established with DB: " + dbName + ConsoleColors.RESET);
+        } catch (SQLException ex) {
+            System.out.println(ConsoleColors.RED + "Error connection to mysql" + ConsoleColors.RESET);
+        }
+
+    }
+
+    public Connection getConnexio() {
+        if (laConnexio == null) {
+            obrirConnexio();
+        }
+
+        return laConnexio;
+
+    }
+
+    public void tancarConnexio() {
+        if (laConnexio != null) {
+            try {
+                laConnexio.close();
+            } catch (SQLException ex) {
+                Logger.getLogger(ConnexioDBMySQL.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        laConnexio = null;
+    }
+
+}
+
+public void describe(Connection con) {
+
+        try {
+            DatabaseMetaData dbmd = con.getMetaData();
+
+            System.out.println(ConsoleColors.BLUE + "\nDBMS information--------" + ConsoleColors.RESET);
+            System.out.println(ConsoleColors.WHITE_BRIGHT + "DBMS:\t" + ConsoleColors.RESET + dbmd.getDatabaseProductName());
+            System.out.println(ConsoleColors.WHITE_BRIGHT + "DBMS:\t" + ConsoleColors.RESET + dbmd.getDatabaseProductVersion());
+
+            ResultSet rstDatabases = dbmd.getCatalogs();
+            int i = 0;
+            String dbName = "";
+            while (rstDatabases.next()) {
+                i++;
+                if (i == 1) {
+                    dbName = rstDatabases.getString("TABLE_CAT");
+                }
+            }
+
+            rstDatabases.close();
+            System.out.println("There are " + i + " databases on the server.");
+
+            System.out.println("Tables on database <" + dbName + ">");
+            ResultSet rstTables = dbmd.getTables(dbName, null, null, null);
+            int numTables = 0;
+            String tableName = "";
+            while (rstTables.next()) {
+                numTables++;
+                System.out.println("\t" + rstTables.getString("TABLE_NAME"));
+                if (numTables == 2) {
+                    tableName = rstTables.getString("TABLE_NAME");
+                }
+            }
+            rstTables.close();
+
+            ResultSet rstColumnes = dbmd.getColumns(dbName, null, tableName, null);
+
+            System.out.println("\t\tColumnes de la taula <" + tableName + ">");
+            while (rstColumnes.next()) {
+                System.out.println("\t\t\t" + rstColumnes.getString("COLUMN_NAME") + "\t\t\t" + rstColumnes.getString("TYPE_NAME"));
+            }
+
+            rstColumnes.close();
+
+        } catch (SQLException ex) {
+            Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+        public static ConnexioDBMySQL conexio;
+
+    public static void main(String[] args) {
+        App app = new App();
+        conexio = new ConnexioDBMySQL("src/main/resources/conexio.properties");
+
+        Connection laConexion = conexio.getConnexio();
+
+        app.describe(laConexion);
+        //app.createDatabase(laConexion);
+        //app.createTable(laConexion,"src/main/resources/script.sql");
+       // app.showTable(laConexion);
+    }
