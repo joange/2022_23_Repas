@@ -115,4 +115,4 @@ Add new methods to:
 
 # 6. Check it
 
-Recover from database battle created in last exercise, and show it on screen.
+Recover from database battle created in last exercise, and show it on screen. You must show All related information: Battle plus Ships
