@@ -11,7 +11,7 @@ We need to:
 
 - Create a class for each class
 - Map each class to store in respective table
-- Map the N:M relationship on a table called EnemigoLlevaArma
+- Map the N:M relationship on a table called `EnemigoLlevaArma`
 
 Run this code to create and generate tables:
 
@@ -26,19 +26,17 @@ public class App {
       app.testHibernate();
   }
   
-      public void testHibernate(){
-      // get a Session and start a transaction
-      laSessio=HibernateUtil.getSessionFactory().getCurrentSession();
-      laSessio.getTransaction().begin();
-      
+  public void testHibernate(){
+    // get a Session and start a transaction
+    laSessio=HibernateUtil.getSessionFactory().getCurrentSession();
+    laSessio.getTransaction().begin();
 
-      
-      laSessio.getTransaction().commit();
-      laSessio.close();
-  }
-        
+    laSessio.getTransaction().commit();
+    laSessio.close();
+  }        
 }
 ```
+
 # 2. What's happen?
 
 If last exercise was well done, you get something like this:
@@ -76,6 +74,7 @@ e3.getArmas().add(a2);
 // store objects
 laSessio.persist(a1);
 laSessio.persist(a2);
+```
 
 change lines for these;
 
@@ -89,30 +88,44 @@ What's the difference?
 
 # 4. Managing objects
 
+## Preparing our project
+
 Preparing the environment:
 
-- In resources folder you have `Batallas.sql` to create a daatabase. Run it on your database server.
+- In resources folder you have `Batallas.sql` to create a database. Run it on your database server.
 - Create a hibernate project to access new database.
-- Add four classes on a `Model` package and adapt it to your project. Remove methods and constructors in order to use Lombok
+- Add four classes on a `Model` package and adapt it to your project. Adapt methods and constructors in order to use Lombok
 
-Create a class `DAOBarco` who contains next methods:
+> **Important**: 
+> - Set `validate` in `hbm2ddl` option in `hibernate.cfg.xml` file. This will check if you set the classes according to the database.
+> - Values for `resultado` in `Participa` table are integers on database, but it will be an enumeration in our java program:
+```java
+public class Participa {
+    
+    public static enum Resultado {
+        ILESO, DAÑADO, HUNDIDO
+    }
+    
+    //Other fields anb methods
 
-- `List<Barco> getAllBarcos();`
-- `Barco getBarcoById(Long id);`
-- `Long addBarco(Barco b);`
-- `boolean removeBarco(Barco b);`
-- `boolean removeBarco(Long id);`
-- `boolean updateBarco(Long id, Barco b);`
+    @Column(name = "resultado",columnDefinition = "int")
+    private Resultado resultado;
+}
+```
 
-# 5. Advance option
+## Create a class `DAOBarco` who contains next methods:
 
-Add new methods to:
+1. `List<Barco> getAllBarcos();`
+2. `Barco getBarcoById(Long id);`
+3. `List<Barco> getBarcosByClassName(String classname);`
+4. `Long addBarco();` (in order to be easy, nor ask for `Clase` neither `Participa`, only Barco information). It will returns new Barcos's ID.
+5. `void deleteBarco(Barco b);`
+6. `void deleteBarco(Long id);`
 
-1. Ask a user for a new Battle
-2. Show all Barco in database and ask user for a list of numbers, separated by commas
-3. Add given Barco as participating in this Battle
-4. Store it
+## 5. Advanced options (proposed)
 
-# 6. Check it
+Add/Modify new methods to:
+1. `Long addBarcoPlus();`. It will show all classes stored on database, user will pick up, and assign it to current Barco.
+2. `Barco updateBarco(Long IDBarco)`: It will show for Barco fields one by one, except ID, showing current value and asking if you want to change it. If user say `yes` then introduce new value. If say no, the current value will be stored. Do not update `Participa`.
+3. `void addParticipaciones(Long IDBarco)`: It will show all participaciones on screen, and enter a comma-seppareted list of its participations. It will assign to this Barco all Participaciones.
 
-Recover from database battle created in last exercise, and show it on screen. You must show All related information: Battle plus Ships
