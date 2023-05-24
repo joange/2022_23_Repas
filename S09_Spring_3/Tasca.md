@@ -53,9 +53,22 @@ Create a DELETE request, to your shopping cart, like `DELETE http://localhost:90
 - Shopping cart 3 exists; you must set an error otherwise.
 - Product 17 exists; you must set an error otherwise.
 
-# EXTRA
+# 3. EXTRA
 
-Create a new class ServedShoppingCart, inheriting ShoppingCart. This class is used when user accept the shopping cart in order to buy. This will add to shopping cart two extra fields:
+## 3.1. Adding extra class
 
-- `total`, computd as the sum of the product's price
+Create a new class `ServedShoppingCart`, containing a `ShoppingCart`. This class is used when user accept the shopping cart in order to buy. This will add, apart from shopping cart, extra fields:
+
+- `total`, computed as the sum of the product's price
 - `paid`, booleans that said if the cart is paid or not.
+- `creationDate` is needed.
+
+## 3.2. Finishing shop
+
+Create all necessary to:
+
+- Finish buying
+- Pay the cart
+
+> Maybe you need to create some controller (mandatory), a repository and a service
+
