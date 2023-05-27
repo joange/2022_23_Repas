@@ -8,4 +8,6 @@ Let's go to do the course <http://nicholasjohnson.com/mongo/course/workbook/>
 
 # Accessing from Java programs
 
-Finally we will create 
+Finally we will create a Java program to do next operations
+
+
