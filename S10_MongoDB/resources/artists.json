@@ -1,0 +1,244 @@
+        {
+            "name":"Leonardo di ser Piero da Vinci",
+            "knownAs":"Leonardo da Vinci",
+            "born":"1452-04-15T00:00:00.000Z",
+            "died":"1519-05-02T00:00:00.000Z",
+            "nationality":"Italian",
+            "knownFor":[
+                "Drawing",
+                "Painting",
+                "Invention"
+            ],
+            "movements":[
+                "High Renaissance"
+            ]
+        }
+        {
+            "name":"Michelangelo di Lodovico Buonarroti Simoni",
+            "knownAs":"Michelangelo",
+            "born":"1475-03-06T00:00:00.000Z",
+            "died":"1564-02-18T00:00:00.000Z",
+            "nationality":"Italian",
+            "knownFor":[
+                "Sculpture",
+                "Painting",
+                "Architecture",
+                "Poetry"
+            ],
+            "movements":[
+                "High Renaissance"
+            ]
+        }
+        {
+            "name":"Raffaello Sanzio da Urbino",
+            "knownAs":"Raphael",
+            "born":"1483-03-28T00:00:00.000Z",
+            "died":"1520-04-06T00:00:00.000Z",
+            "nationality":"Italian",
+            "knownFor":[
+                "Painting",
+                "Architecture"
+            ],
+            "movements":[
+                "High Renaissance"
+            ]
+        }
+        {
+            "name":"Michelangelo Merisi (or Amerighi) da Caravaggio",
+            "knownAs":"Caravaggio",
+            "born":"1571-09-29T00:00:00.000Z",
+            "died":"1610-07-18T00:00:00.000Z",
+            "nationality":"Italian",
+            "knownFor":[
+                "Painting"
+            ],
+            "movements":[
+                "Baroque"
+            ]
+        }
+        {
+            "name":"Sir Peter Paul Rubens",
+            "knownAs":"Rubens",
+            "born":"1577-06-28T00:00:00.000Z",
+            "died":"1640-05-30T00:00:00.000Z",
+            "nationality":"Flemish",
+            "knownFor":[
+                "Painting",
+                "Printmaking"
+            ],
+            "movements":[
+                "Baroque"
+            ]
+        }
+        {
+            "name":"Diego Rodríguez de Silva y Velázquez",
+            "knownAs":"Velázquez",
+            "born":"1599-06-06T00:00:00.000Z",
+            "died":"1660-08-06T00:00:00.000Z",
+            "nationality":"Spanish",
+            "knownFor":[
+                "Painting"
+            ],
+            "movements":[
+                "Baroque"
+            ]
+        }
+        {
+            "name":"Rembrandt Harmenszoon van Rijn",
+            "knownAs":"Rembrandt",
+            "born":"1606-07-15T00:00:00.000Z",
+            "died":"1669-10-04T00:00:00.000Z",
+            "nationality":"Dutch",
+            "knownFor":[
+                "Painting",
+                "Printmaking"
+            ],
+            "movements":[
+                "Dutch Golden Age",
+                "Baroque"
+            ]
+        }
+        {
+            "name":"Johannes Vermeer",
+            "knownAs":"Vermeer",
+            "born":"1632-10-31T00:00:00.000Z",
+            "died":"1675-12-15T00:00:00.000Z",
+            "nationality":"Dutch",
+            "knownFor":[
+                "Painting"
+            ],
+            "movements":[
+                "Dutch Golden Age",
+                "Baroque"
+            ]
+        }
+        {
+            "name":"Francisco José de Goya y Lucientes",
+            "knownAs":"Goya",
+            "born":"1746-03-30T00:00:00.000Z",
+            "died":"1828-04-16T00:00:00.000Z",
+            "nationality":"Spanish",
+            "knownFor":[
+                "Painting",
+                "Drawing",
+                "Sculpture",
+                "Printmaking"
+            ],
+            "movements":[
+                "Romanticism"
+            ]
+        }
+        {
+            "name":"Paul Cézanne",
+            "knownAs":"Cézanne",
+            "born":"1839-01-16T00:00:00.000Z",
+            "died":"1906-10-22T00:00:00.000Z",
+            "nationality":"French",
+            "knownFor":[
+                "Painting"
+            ],
+            "movements":[
+                "Post-Impressionism"
+            ]
+        }
+        {
+            "name":"Oscar-Claude Monet",
+            "knownAs":"Monet",
+            "born":"1840-11-14T00:00:00.000Z",
+            "died":"1926-12-05T00:00:00.000Z",
+            "nationality":"French",
+            "knownFor":[
+                "Painting"
+            ],
+            "movements":[
+                "Impressionism"
+            ]
+        }
+        {
+            "name":"Eugène Henri Paul Gauguin",
+            "knownAs":"Gauguin",
+            "born":"1848-06-07T00:00:00.000Z",
+            "died":"1903-05-08T00:00:00.000Z",
+            "nationality":"French",
+            "knownFor":[
+                "Painting",
+                "Sculpture",
+                "Ceramics",
+                "Engraving"
+            ],
+            "movements":[
+                "Post-Impressionism",
+                "Primitivism"
+            ]
+        }
+        {
+            "name":"Wassily Wassilyevich Kandinsky",
+            "knownAs":"Kandinsky",
+            "born":"1866-12-16T00:00:00.000Z",
+            "died":"1944-12-13T00:00:00.000Z",
+            "nationality":"Russian",
+            "knownFor":[
+                "Painting"
+            ],
+            "movements":[
+                "Expressionism"
+            ]
+        }
+        {
+            "name":"Henri-Émile-Benoît Matisse",
+            "knownAs":"Matisse",
+            "born":"1869-12-31T00:00:00.000Z",
+            "died":"1954-11-03T00:00:00.000Z",
+            "nationality":"French",
+            "knownFor":[
+                "Painting",
+                "Printmaking",
+                "Sculpture",
+                "Drawing",
+                "Collage"
+            ],
+            "movements":[
+                "Fauvism",
+                "Modernism",
+                "Impressionism"
+            ]
+        }
+        {
+            "name":"Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios Cipriano de la Santísima Trinidad Martyr Patricio Clito Ruíz y Picasso",
+            "knownAs":"Picasso",
+            "born":"1881-10-25T00:00:00.000Z",
+            "died":"1973-04-08T00:00:00.000Z",
+            "nationality":"Spanish",
+            "knownFor":[
+                "Painting",
+                "Drawing",
+                "Sculpture",
+                "Printmaking",
+                "Ceramics",
+                "Stage Design",
+                "Writing"
+            ],
+            "movements":[
+                "Cubism",
+                "Surrealism"
+            ]
+        }
+        {
+            "name":"Salvador Domingo Felipe Jacinto Dalí i Domènech",
+            "knownAs":"Dalí",
+            "born":"1904-05-11T00:00:00.000Z",
+            "died":"1989-01-23T00:00:00.000Z",
+            "nationality":"Spanish",
+            "knownFor":[
+                "Painting",
+                "Drawing",
+                "Sculpture",
+                "Writing",
+                "Film"
+            ],
+            "movements":[
+                "Cubism",
+                "Dada",
+                "Surrealism"
+            ]
+        }
