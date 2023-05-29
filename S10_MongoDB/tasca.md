@@ -62,7 +62,7 @@ Best artist is Pablo Diego José Francisco de Paula Juan Nepomuceno María de lo
 Show all artist, group by how many abilities they have (`knownFor`). It's a good idea to find first artist with one, then artist with to, etc. finishing with the number of abilities found in exercise 2.
 
 ```
-Artists with 1 habilitites:
+Artists with 1 abilities:
 ==========================================
 	Caravaggio
 	Velázquez
@@ -70,26 +70,26 @@ Artists with 1 habilitites:
 	Cézanne
 	Monet
 	Kandinsky
-Artists with 2 habilitites:
+Artists with 2 abilities:
 ==========================================
 	Raphael
 	Rubens
 	Rembrandt
-Artists with 3 habilitites:
+Artists with 3 abilities:
 ==========================================
 	Leonardo da Vinci
-Artists with 4 habilitites:
+Artists with 4 abilities:
 ==========================================
 	Michelangelo
 	Goya
 	Gauguin
-Artists with 5 habilitites:
+Artists with 5 abilities:
 ==========================================
 	Matisse
 	Dalí
-Artists with 6 habilitites:
+Artists with 6 abilities:
 ==========================================
-Artists with 7 habilitites:
+Artists with 7 abilities:
 ==========================================
 	Picasso
 ```
