@@ -12,7 +12,7 @@ Finally we will create a Java program to do several tasks. You have a file named
 
 ```sh
 mongoimport --host localhost --port 27017 \
-  --authenticationDatabase \
+  --authenticationDatabase admin\
   --username root --password root \
   --db artists --collection artists \
   --type json --file artists.json 
